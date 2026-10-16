@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: prod
+data:
+  MYSQL_DATABASE: projectops
+  DB_URL: "jdbc:mysql://mysql:3306/projectops?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
